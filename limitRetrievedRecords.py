@@ -7,7 +7,7 @@ import mysql.connector
 dataBase = mysql.connector.connect(
     host="localhost",
     user="root",
-    passwd="Super7898$$#",
+    passwd="#W15w2020#",
     database="serviceDB"
 )
 

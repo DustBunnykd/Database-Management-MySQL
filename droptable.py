@@ -4,7 +4,7 @@ import mysql.connector as SQLC
 DataBase = SQLC.connect(
   host="localhost",
   user="root",
-  password="Super7898$$#",
+  password="#W15w2020#",
   database = "serviceDB"
 )
 def showtables():

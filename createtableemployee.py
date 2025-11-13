@@ -21,15 +21,19 @@ def showtables():
 cursorObject = dataBase.cursor()
  
 # creating table a
-Records = """CREATE TABLE tbl_service (
-             ServiceId INT NOT NULL AUTO_INCREMENT,
-             Services VARCHAR(255) NOT NULL,
-             PRIMARY KEY (ServiceId)
+
+Records = """CREATE TABLE Employees(
+             EmployeeId INT NOT NULL AUTO_INCREMENT,
+             Fullname VARCHAR(500) NOT NULL,
+             Email VARCHAR(500) NOT NULL,
+             ServiceId INT,
+             PRIMARY KEY (EmployeeId)
                    )"""
- 
+
+
 # table created
 cursorObject.execute(Records) 
-print("tbl_service table created successfully")
+print("Employees table created successfully")
 showtables()
 # disconnecting from server
 dataBase.close()
